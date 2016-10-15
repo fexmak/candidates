@@ -1,0 +1,54 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	margin-top: 100px;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+section {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+#timelineCheckboxes {
+	display: block;
+	width: 100%;
+}
+
+#timeline p {
+	font-size: 16px !important;
+	font-weight: bold;
+}
+
+#timeline .row {
+	padding: .5em;
+}
+
+.main-row {
+	-webkit-box-shadow: 5px 5px 2px 0px rgba(180, 180, 180, 1);
+	-moz-box-shadow: 5px 5px 2px 0px rgba(180, 180, 180, 1);
+	box-shadow: 5px 5px 2px 0px rgba(180, 180, 180, 1);
+	border-color: rgba(180, 180, 180, 1);
+	border-width: 1px;
+	border-style: solid;
+	background-color: #EEEEEE;
+}
+
+.timeline-panels {
+	cursor: pointer;
+}
