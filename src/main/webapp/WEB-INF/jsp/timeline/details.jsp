@@ -9,8 +9,7 @@
 	<h2>Timeline</h2>
 	<br>
 	<div class="row main-row">
-		<a class="btn btn-default" id="backButton"
-			href="<c:url value="/quota/details.html?id=${ pid }"/>">
+		<a class="btn btn-default" id="backButton" href="<c:url value=" /quota/details.html?id=${ pid } "/>">
 			<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
 			<span>Back to Quota</span>
 		</a>
@@ -50,8 +49,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="progress" id="progressBar">
-						<div class="progress-bar" id="statusBar" role="progressbar"
-							style="width: 0%"></div>
+						<div class="progress-bar" id="statusBar" role="progressbar" style="width: 0%"></div>
 					</div>
 				</div>
 			</div>
@@ -59,13 +57,25 @@
 				<div class="checkboxes col-md-12" id="timelineCheckboxes">
 					<div class="row">
 						<c:forEach items="${ events }" var="evt" varStatus="count">
-							<c:set var="eventName" value="${ possibleEvents[count.index].name }"/>
-							<c:set var="eventHTMLId" value="${ possibleEvents[count.index].htmlId }"/>
+							<c:set var="eventName" value="${ possibleEvents[count.index].name }" />
+							<c:set var="eventHTMLId" value="${ possibleEvents[count.index].htmlId }" />
 							<div class="col-md-2">
-								<input type="checkbox" class="progressCheckbox"
-									${ evt.value }
-									id="${ eventHTMLId }">
+								<input type="checkbox" class="progressCheckbox" ${ evt.value } id="${ eventHTMLId }">
 								<label>${ eventName }</label>
+							</div>
+							<!--
+							private Long eventId;
+							private Date date;
+							private String name;
+							private String description;
+							-->
+							<div class="panel panel-default hidden">
+								<div class="panel-body">
+									<p>Description</p>
+								</div>
+								<div class="panel-footer">
+									<div class="btn btn-primary">Save</div>
+								</div>
 							</div>
 						</c:forEach>
 					</div>
@@ -74,5 +84,5 @@
 		</div>
 	</div>
 </section>
-<script src="<c:url value="/js/timeline.js"/>"></script>
+<script src="<c:url value=" /js/timeline.js "/>"></script>
 <c:import url="/templates/bot.jsp" />

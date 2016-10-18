@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					Cognizant 2016
+					Leo Paluci 2016
 				</div>
 			</div>
 		</div>

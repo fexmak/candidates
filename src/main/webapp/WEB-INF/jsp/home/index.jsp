@@ -29,25 +29,27 @@
 <!-- 		</div> -->
 		<div class="row">
 			<div class="col-sm-4 portfolio-item">
-				<a href="#portfolioModal1" class="portfolio-link"
+				<a href="../serviceorder/form.html" class="portfolio-link"
 					data-toggle="modal">
 					<div class="caption">
 						<div class="caption-content">
+						<label>New Service Order</label>
 							<i class="fa fa-search-plus fa-3x"></i>
 						</div>
-					</div> <img src="<c:url value="/img/portfolio/cabin.png"/>"
-					class="img-responsive" alt="">
+					</div> <img src="<c:url value="/img/portfolio/NewServiceOrder.jpg"/>"
+					class="img-responsive img-rounded" alt="">
 				</a>
 			</div>
 			<div class="col-sm-4 portfolio-item">
-				<a href="#portfolioModal2" class="portfolio-link"
+				<a href="../serviceorder/list.html" class="portfolio-link"
 					data-toggle="modal">
 					<div class="caption">
 						<div class="caption-content">
+						<label>List of Service Order</label>
 							<i class="fa fa-search-plus fa-3x"></i>
 						</div>
-					</div> <img src="<c:url value="/img/portfolio/cake.png"/>"
-					class="img-responsive" alt="">
+					</div> <img src="<c:url value="/img/portfolio/ListServiceOrder.png"/>"
+					class="img-responsive img-rounded" alt="">
 				</a>
 			</div>
 			<div class="col-sm-4 portfolio-item">
@@ -55,28 +57,17 @@
 					data-toggle="modal">
 					<div class="caption">
 						<div class="caption-content">
+						<label>Last Timeline Opened</label>
 							<i class="fa fa-search-plus fa-3x"></i>
 						</div>
-					</div> <img src="<c:url value="/img/portfolio/circus.png"/>"
-					class="img-responsive" alt="">
+					</div> <img src="<c:url value="/img/portfolio/LastTimelineOpened.jpg"/>"
+					class="img-responsive img-rounded" alt="">
 				</a>
 			</div>
-			<div class="col-sm-4 portfolio-item">
-				<a href="#portfolioModal4" class="portfolio-link"
-					data-toggle="modal">
-					<div class="caption">
-						<div class="caption-content">
-							<i class="fa fa-search-plus fa-3x"></i>
-						</div>
-					</div> <img src="<c:url value="/img/portfolio/circus.png"/>"
-					class="img-responsive" alt="">
-				</a>
-			</div>
+		
 		</div>
 	</div>
 </section>
 
-
-<c:import url="/templates/modals.jsp" />
 
 <c:import url="/templates/bot.jsp" />

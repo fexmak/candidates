@@ -5,27 +5,27 @@ $(document).ready(function () {
 		progress: {
 			'newCandidate': {
 				percentage: '0%',
-				color: 'progress-bar progress-bar-default'
+				color: 'progress-bar-striped active progress-bar-default'
 			},
 			'firstCall': {
 				percentage: '20%',
-				color: 'progress-bar progress-bar-info'
+				color: 'progress-bar-striped active progress-bar-info'
 			},
 			'firstInterview': {
 				percentage: '40%',
-				color: 'progress-bar progress-bar-info'
+				color: 'progress-bar-striped active progress-bar-info'
 			},
 			'techInterview': {
 				percentage: '60%',
-				color: 'progress-bar progress-bar-info'
+				color: 'progress-bar-striped active progress-bar-info'
 			},
 			'healthTests': {
 				percentage: '80%',
-				color: 'progress-bar progress-bar-info'
+				color: 'progress-bar-striped active progress-bar-info'
 			},
 			'hired': {
 				percentage: '100%',
-				color: 'progress-bar progress-bar-success'
+				color: 'progress-bar-success'
 			}
 		}
 	});
@@ -56,12 +56,26 @@ $(document).ready(function () {
 	}
 
 	function updateProgress(value, color) {
-		$('#statusBar').css('width', value).attr('class', color);
+		$('#statusBar').css('width', value).attr('class', 'progress-bar ' + color);
 	}
+	
+	$('.toggle-description').click(function (e) {
+		e.stopPropagation();
+		var target = $(e.target);
+		if(target.parent().is('button'))
+			target = target.parent();
+		var jQSelector = '#' + target.prev().html() + 'Desc';
+		var targetDesc = $(jQSelector);
+		var hidden = false;
+		if(targetDesc.css('display') == 'none')
+			hidden = true;
+		$('.descTextarea').hide();
+		if(hidden) targetDesc.show();
+	});
 
 	$(':checkbox').change(function () {
 		var thisCheckbox = $(this);
-		var nextCheckbox = thisCheckbox.parent().next().children().first();
+		var nextCheckbox = thisCheckbox.parent().parent().next().children('.checkbox').children(':checkbox').first();
 
 		if (nextCheckbox.prop('class') === "progressCheckbox") {
 			if (thisCheckbox.is(':checked')) {

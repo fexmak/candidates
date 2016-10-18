@@ -9,8 +9,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../img/cognizant.png">
-	<title>CTS Candidates</title>
+	<link rel="icon" href="../img/logo.png">
+	<title>LP Candidates</title>
 	
 	<!-- CSS -->
 	<link href="<c:url value="/css/bootstrap.css"/>" rel="stylesheet">
@@ -18,7 +18,7 @@
 	<link href="<c:url value="/css/jquery-ui.css"/>" rel="stylesheet">
 	<link href="<c:url value="/css/jquery-ui.structure.css"/>" rel="stylesheet">
 	<link href="<c:url value="/css/jquery-ui.theme.css"/>" rel="stylesheet">
-	<link href="<c:url value="/css/ctscandidates.css"/>" rel="stylesheet">
+	<link href="<c:url value="/css/lpcandidates.css"/>" rel="stylesheet">
 	<link href="<c:url value="/css/styles.css"/>" rel="stylesheet">
 	
 	<!-- Fonts -->
@@ -44,7 +44,7 @@
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header page-scroll">
-		<img src="../img/cognizant.png" class="img-circle pull-left"
+		<img src="../img/logo.png" class="img-circle pull-left"
 					width="50" height="50">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>

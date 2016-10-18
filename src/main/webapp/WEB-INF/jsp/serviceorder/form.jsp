@@ -9,40 +9,44 @@
 <script src="<c:url value="/js/jquery.validate.js"/>"></script>
 
 <script>
-$(function() {
-	$('#serviceOrderForm').validate();
-});
+	$(function() {
+		$('#serviceOrderForm').validate();
+	});
 </script>
 
 
 <div class="container">
-<div class='page-header'>
-	<h4>New Service Order</h4>
-</div>
+	<div class='page-header'>
+		<h4 class="colorWhite">New Service Order</h4>
+	</div>
 
-<div class="col-md-6 col-md-offset-2">
-	<form:form method="post" modelAttribute="serviceOrderForm"
-		action="save.html">
+	<div class="col-sm-8 col-md-8 col-md-offset-2">
+		<div class="thumbnail main-row">
+			<div class="caption">
+				<form:form method="post" modelAttribute="serviceOrderForm"
+					action="save.html">
 
 
-		<div class="form-group">
-			<label for="proyectManager">Proyect Manager</label>
-			<form:input path="proyectManager" type="text"
-				class="form-control required" />
+					<div class="form-group">
+						<label for="projectManager">Project Manager</label>
+						<form:input path="projectManager" type="text"
+							class="form-control required" />
+					</div>
+
+					<div class="form-group">
+						<label for="recruiter">Recruiter</label>
+						<form:input path="recruiter" type="text"
+							class="form-control required" />
+					</div>
+
+					<div class="form-group">
+						<input type="submit" class="btn btn-success" value="Next">
+					</div>
+
+				</form:form>
+			</div>
 		</div>
-
-		<div class="form-group">
-			<label for="recruiter">Recruiter</label>
-			<form:input path="recruiter" type="text"
-				class="form-control required" />
-		</div>
-	
-			<div class="form-group">
-			<input type="submit" class="btn btn-success" value="Next">
-		</div>
-
-	</form:form>
-</div>
+	</div>
 </div>
 
 
